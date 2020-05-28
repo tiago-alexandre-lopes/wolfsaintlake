@@ -775,7 +775,7 @@ button.burger-icon::after {
 
 .desktop main{
   height: 100%;
-  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .desktop h1.jumbo-title {
