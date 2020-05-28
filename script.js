@@ -36,11 +36,10 @@ $(document).ready(function() {
 
             $("body").addClass("desktop").removeClass("mobile");
 
-            //Adds horizontal scroll
-            $('html, body, *').mousewheel(function(e, delta) {
-                this.scrollLeft -= (delta);
-                e.preventDefault();
-            });
+           
+        
+
+
 
             // Inverts z-index
             var item_count = $('section').length;
@@ -74,4 +73,19 @@ $(".burger-icon").click(function(){
 $("#navigation a").click(function(){
     $(".burger-icon").removeClass("active");
     $("body").removeClass("navigation-open");
+});
+
+
+
+
+// Smooth scroll
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
 });
