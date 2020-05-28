@@ -35,8 +35,27 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
+
+
     <link rel="stylesheet" href="./style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js'></script>
+    <script src="./script.js"></script>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 
 </head>
 
@@ -683,7 +702,7 @@
                         <h2>You can catch me on</h2>
                         <ul class="social-links">
                             <li class="instagram">
-                                <a href="https://open.spotify.com/user/xrv3szxqclod27j830ajgefvn" target="_blank">
+                                <a href="https://www.instagram.com/tiago.alexandre.lopes/" target="_blank">
                                     <svg viewBox="0 0 39 39" xmlns="http://www.w3.org/2000/svg">
                                         <g fill="none" fill-rule="evenodd">
                                             <path class="fill" d="M29.25.75c4.9705639 0 9 4.02943755 9 9v19.5c0 4.9705639-4.0294361 9-9 9H9.75c-4.97056245 0-9-4.0294361-9-9V9.75c0-4.97056245 4.02943755-9 9-9h19.5zm-9.7826085 9c-5.3847763 0-9.75 4.3652237-9.75 9.75s4.3652237 9.75 9.75 9.75 9.75-4.3652237 9.75-9.75-4.3652237-9.75-9.75-9.75z" />
@@ -703,14 +722,14 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="https://open.spotify.com/user/xrv3szxqclod27j830ajgefvn" target="_blank">
+                                <a href="https://twitter.com/IamTiagoLopes" target="_blank">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47 38" vector-effect="non-scaling-stroke">
                                         <path class="fill" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" d="M4.58695645 3.5649157C8.22869785 8.00446015 14.7489862 12.1936235 23.5 12.6440029c-.4826517-1.92772005-.5291176-7.15998885 3.2864256-9.3345108C28.4929858 2.33681725 30.1084395 1.75 32.0115919 1.75c2.3912201 0 4.3538617.78694155 6.4415331 2.70145875 1.6992673-.23754 4.873581-1.54719255 5.6267251-2.06163735-.4903649 1.80518745-2.4522142 4.12308165-3.8695221 4.673418 1.3014393-.00385965 4.1629487-.7500552 5.039672-1.1909796-1.2164182 1.87677675-3.3406019 3.6746313-4.5028438 4.42082625C42.092947 21.8584565 31.3555708 36.2355776 15.9348088 36.25 11.5310356 36.2540998 6.745321 35.356494 1.75 32.6179944c4.92775905.5540027 10.2075756-.9783669 13.2391305-3.6316339-3.8232543-.0829753-7.69556235-2.5564614-9.456522-6.355362 1.91558175.5727196 3.6816906.862939 4.7282607 0-1.7840931-.1921921-7.565217-3.2318601-7.565217-9.118834 1.3285296 1.0553255 3.24135195 2.1457844 4.7282607 1.8555651-2.43303405-1.383173-5.96895645-6.65084265-2.83695645-11.8028139z" />
                                     </svg>
                                 </a>
                             </li>
                             <li>
-                                <a href="https://open.spotify.com/user/xrv3szxqclod27j830ajgefvn" target="_blank">
+                                <a href="https://dribbble.com/tiagoalexandrelopes" target="_blank">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 47 47" vector-effect="non-scaling-stroke">
                                         <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" transform="translate(1 1)">
                                             <circle class="fill" cx="22.5" cy="22.5" r="21.75" />
@@ -729,22 +748,7 @@
         </section>
 
     </main>
-    <!-- partial -->
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js'></script>
-    <script src="./script.js"></script>
 
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-    </script>
 
 </body>
 
