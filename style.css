@@ -82,7 +82,14 @@ body {
   font-size: 1.6rem;
   line-height: 160%;
   font-family: 'm_regular';
+  overflow-x: hidden;
 }
+
+body.mobile{
+  overflow-x: initial;
+}
+
+
 
 html,
 body {
