@@ -90,12 +90,20 @@ body {
   font-size: 1.6rem;
   line-height: 160%;
   font-family: 'm_regular';
+  -webkit-transition: transform 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: transform 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
+}
+
+body.mobile{
+  overflow-x: hidden;
+  width: 100vw;
 }
 
 
@@ -752,17 +760,23 @@ svg .fill {
   display: none;
 }
 
+
+
 #navigation {
   position: fixed;
   background: white;
   width: 100vw;
   height: 100vh;
   left: 0;
+}
+
+
+.desktop #navigation{
+  opacity: 0;
+  z-index: -1 !important;
   -webkit-transition: all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
   -o-transition: all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
-  opacity: 0;
-  z-index: -1 !important;
 }
 
 #navigation .wrapper{
@@ -801,9 +815,10 @@ svg .fill {
   overflow: hidden;
 }
 
-.mobile.navigation-open #navigation{
-  z-index: 99999 !important;
-}
+
+
+
+
 
 .burger-icon {
   position: relative;
@@ -842,11 +857,14 @@ button.burger-icon::after {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
+  display: block;
+  position: relative;
+}
+
+.desktop .burger-icon span{
   -webkit-transition: all .6s cubic-bezier(.77, 0, .175, 1);
   -o-transition: all .6s cubic-bezier(.77, 0, .175, 1);
   transition: all .6s cubic-bezier(.77, 0, .175, 1);
-  display: block;
-  position: relative;
 }
 
 .burger-icon span:after,
@@ -866,18 +884,18 @@ button.burger-icon::after {
   margin-top: .8vh;
 }
 
-.burger-icon.active span {
+.desktop .burger-icon.active span {
   background: transparent;
 }
 
-.burger-icon.active span:before {
+.desktop .burger-icon.active span:before {
   margin-top: 0;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-.burger-icon.active span:after {
+.desktop .burger-icon.active span:after {
   margin-top: 0;
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
@@ -931,6 +949,16 @@ button.burger-icon::after {
 
 .desktop h3.large-title {
   font-size: 2.25vh;
+}
+
+
+.mobile main{
+  transition: transform 0.6s cubic-bezier(0.85, 0, 0.15, 1);
+  width: 100vw;
+}
+
+.mobile.navigation-open main{
+  transform: translateX(-100%);
 }
 
 
@@ -1811,6 +1839,8 @@ button.burger-icon::after {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  z-index: 99;
+  transform: translateX(100%)
 }
 
 .mobile #navigation nav a{
@@ -2175,21 +2205,7 @@ button.burger-icon::after {
   opacity: 0;
 }
 
-.mobile .burger-icon span,
-.mobile .burger-icon span:before,
-.mobile .burger-icon span:after {
-  width: 6vw;
-  height: .5vw;
-  transform-origin: 1vw;
-}
 
-.mobile .burger-icon span:before {
-  margin-top: -1.5vw;
-}
-
-.mobile .burger-icon span:after {
-  margin-top: 1.5vw;
-}
 
 .mobile .floating-logomark {
   position: absolute;
@@ -2230,7 +2246,7 @@ button.burger-icon::after {
 }
 
 .mobile #intro + section {
-  z-index: 99999;
+  z-index: 99;
   position: relative;
   background: transparent;
   padding-top: 50vw;
