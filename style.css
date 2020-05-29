@@ -103,7 +103,6 @@ body {
 
 body.mobile{
   overflow-x: hidden;
-  width: 100vw;
 }
 
 
@@ -774,8 +773,8 @@ svg .fill {
 .desktop #navigation{
   opacity: 0;
   z-index: -1 !important;
-  -webkit-transition: all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition: all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-transition: opacity 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition: opacity 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
@@ -811,9 +810,7 @@ svg .fill {
   opacity: 1;
 }
 
-.mobile.navigation-open{
-  overflow: hidden;
-}
+
 
 
 
@@ -954,12 +951,9 @@ button.burger-icon::after {
 
 .mobile main{
   transition: transform 0.6s cubic-bezier(0.85, 0, 0.15, 1);
-  width: 100vw;
 }
 
-.mobile.navigation-open main{
-  transform: translateX(-100%);
-}
+
 
 
 /**/
@@ -1806,6 +1800,8 @@ button.burger-icon::after {
   cursor: pointer;
 }
 
+
+
 .desktop .burger-icon-wrapper::after {
   content: "";
   width: 100%;
@@ -1831,6 +1827,7 @@ button.burger-icon::after {
 
 /* Mobile */
 
+
 .mobile #navigation{
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1840,7 +1837,27 @@ button.burger-icon::after {
           align-items: center;
   text-align: center;
   z-index: 99;
-  transform: translateX(100%)
+  position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    transition: none;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.mobile.navigation-open #navigation{
+  opacity: 1;
+  visibility: visible;
+}
+
+.mobile.navigation-open{
+overflow: hidden;
+}
+
+.mobile.navigation-open main{
+
 }
 
 .mobile #navigation nav a{
@@ -2303,3 +2320,6 @@ button.burger-icon::after {
 .mobile .m-text_color-black a {
   color: black;
 }
+
+
+
