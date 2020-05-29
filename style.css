@@ -2218,13 +2218,6 @@ overflow: hidden;
       flex-flow: row;
 }
 
-.desktop #main-navigation .main-navigation-title{
-  padding: 4vh 1.6vh;
-}
-
-.desktop .main-navigation-title h1{
-  line-height: 1;
-}
 
 
 .mobile .main-navigation-title {
