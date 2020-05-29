@@ -211,7 +211,7 @@ a {
   font-size: 1.35rem;
   text-transform: uppercase;
   color: black;
-  text-decoration: none;
+  text-decoration: underline;
   position: relative;
   overflow: hidden;
   display: inline-block;
@@ -650,10 +650,6 @@ svg .fill {
   color: #a3a3a3
 }
 
-.text_color-gray a{
-  background:rgba(255, 255, 255, .3);
-  color: black;
-}
 
 .text_color-gray a:hover{
   background: rgba(0, 0, 0, 1);
