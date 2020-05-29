@@ -794,6 +794,7 @@ svg .fill {
   font-size: 10vh;
     line-height: initial;
     margin: 2vh 0;
+    text-decoration: none;
 }
 
 #navigation nav a:hover{
