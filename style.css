@@ -84,7 +84,7 @@ html {
 }
 
 body {
-  background-color: white;
+  background-color: #191919;
   color: black;
   font-weight: 400;
   font-size: 1.6rem;
@@ -673,7 +673,24 @@ svg .fill {
   background: #191919;
   -webkit-perspective: 100vh;
           perspective: 100vh;
+          
 }
+
+.desktop #main-navigation{
+  transform: translateX(-100%);
+  animation: show_main_navigation 2s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
+}
+
+@keyframes show_main_navigation {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
 
 #main-navigation > ul {
   display: -webkit-box;
