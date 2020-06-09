@@ -431,7 +431,7 @@ section video {
   background: #191919;
 }
 
-.bg-dark svg path {
+.bg-dark svg:not(.heraldry) path {
   fill: white;
 }
 
