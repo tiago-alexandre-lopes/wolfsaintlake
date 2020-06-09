@@ -710,6 +710,8 @@ svg .fill {
           
 }
 
+
+
 .desktop #main-navigation{
   transform: translateX(-100%);
   animation: show_main_navigation 2s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
@@ -1190,6 +1192,10 @@ button.burger-icon::after {
           backface-visibility: hidden;
   -webkit-perspective: 1000;
           perspective: 1000;
+
+          -webkit-transition: transform 2s cubic-bezier(0.445, 0.05, 0.55, 0.95), opacity 2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    -o-transition: transform 2s cubic-bezier(0.445, 0.05, 0.55, 0.95), opacity 2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    transition: transform 2s cubic-bezier(0.445, 0.05, 0.55, 0.95), opacity 2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
 .desktop section.fadein .wrapper {
@@ -1594,6 +1600,17 @@ button.burger-icon::after {
   -webkit-transform: translateX(70vh) translateY(-50%);
       -ms-transform: translateX(70vh) translateY(-50%);
           transform: translateX(70vh) translateY(-50%);
+}
+
+.desktop .heraldry{
+  position: absolute;
+  width: 40vh;
+  bottom: 5vh;
+  left: calc(100% - -15vh);
+}
+
+.desktop .heraldry path{
+  fill: #131313;
 }
 
 .desktop .full-size-bg figure {
