@@ -1604,9 +1604,9 @@ button.burger-icon::after {
 
 .desktop .heraldry{
   position: absolute;
-  width: 40vh;
+  left: 15vh;
   bottom: 5vh;
-  left: calc(100% - -15vh);
+  width: 40vh;
 }
 
 .desktop .heraldry path{
@@ -1773,6 +1773,7 @@ button.burger-icon::after {
 
 .desktop main {
   padding-left: 7vh;
+  overflow: hidden;
 }
 
 .desktop .svg_animated_card_section {
