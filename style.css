@@ -690,6 +690,7 @@ svg .fill {
   left: 0;
   position: absolute;
   z-index: 99999999 !important;
+  background: #191919;
 }
 
 #main-navigation {
