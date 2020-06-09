@@ -753,7 +753,10 @@ svg .fill {
   padding: 4vh 2vh;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 6rem
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #main-navigation h1 {
