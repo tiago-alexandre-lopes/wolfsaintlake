@@ -713,8 +713,8 @@ svg .fill {
 
 
 .desktop #main-navigation{
-  transform: translateX(-100%);
-  animation: show_main_navigation 2s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
+  /*transform: translateX(-100%);
+  animation: show_main_navigation 2s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;*/
 }
 
 .desktop #main-navigation .main-navigation-title{
