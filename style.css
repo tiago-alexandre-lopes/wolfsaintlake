@@ -1617,7 +1617,8 @@ button.burger-icon::after {
   width: 40vh;
 }
 
-.desktop .heraldry path{
+
+.heraldry path{
   fill: #131313;
 }
 
@@ -1883,7 +1884,7 @@ button.burger-icon::after {
     transition: none;
     visibility: hidden;
     opacity: 0;
-    transition: opacity 1s cubic-bezier(0.76, 0, 0.24, 1);
+    transition: all 1s cubic-bezier(0.76, 0, 0.24, 1);
 }
 
 .mobile.navigation-open #navigation{
@@ -2186,6 +2187,25 @@ overflow: hidden;
   max-width: 10vw;
 }
 
+.mobile .wsl_exp{
+  position: relative;
+    z-index: 2;
+}
+
+.mobile section .row .heraldry{
+  height: 100%;
+  max-width: none;
+  padding: 2.5vw 5vw;
+  transform: translateX(50%) translateY(-50%);
+  position: absolute;
+  top: 50%;
+  z-index: 0;
+}
+
+.mobile section .row .heraldry path{
+  fill: #131313;
+}
+
 .mobile .m-extra-margin-top {
   margin-top: 8vw;
 }
@@ -2239,6 +2259,7 @@ overflow: hidden;
 
 .mobile #main-navigation-wrapper {
   position: relative;
+  background: transparent;
 }
 
 .mobile #main-navigation {
