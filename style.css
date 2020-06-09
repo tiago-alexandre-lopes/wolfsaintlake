@@ -715,6 +715,11 @@ svg .fill {
   animation: show_main_navigation 2s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
 }
 
+.desktop #main-navigation .main-navigation-title{
+  position: absolute;
+  bottom: 0;
+}
+
 @keyframes show_main_navigation {
   0% {
     transform: translateX(-100%);
@@ -737,8 +742,8 @@ svg .fill {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 100%;
-  width: 6rem;
+  /*height: 100%;
+  width: 6rem;*/
 }
 
 #main-navigation li {
