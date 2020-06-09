@@ -1154,9 +1154,9 @@ button.burger-icon::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 100vh;
-  -webkit-transition: all 2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  -o-transition: all 2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-  transition: all 2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -webkit-transition: transform 2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  -o-transition: transform 2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  transition: transform 2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
   opacity: 0;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
