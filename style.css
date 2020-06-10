@@ -1819,7 +1819,7 @@ button.burger-icon::after {
 }
 
 .desktop #design h1 {
-  font-size: 22vh;
+  font-size: 29vh;
   padding-top: 4vh;
 }
 
@@ -1885,6 +1885,7 @@ button.burger-icon::after {
     visibility: hidden;
     opacity: 0;
     transition: all 1s cubic-bezier(0.76, 0, 0.24, 1);
+    display: none;
 }
 
 .mobile.navigation-open #navigation{
@@ -2260,6 +2261,7 @@ overflow: hidden;
 .mobile #main-navigation-wrapper {
   position: relative;
   background: transparent;
+  display: none;
 }
 
 .mobile #main-navigation {
@@ -2328,7 +2330,7 @@ overflow: hidden;
   z-index: 99;
   position: relative;
   background: transparent;
-  padding-top: 50vw;
+  padding-top: 80vw;
 }
 
 .mobile #design h1 {
