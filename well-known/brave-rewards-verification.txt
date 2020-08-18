@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: tiagoalexandrelopes.com
+Token: f1484f9a456cf8ac9b8bb7ea5da92fe89f6186e6c5970901f87a4438496e5f2f
