@@ -40,12 +40,12 @@ section{
     font-size: 8vh;
     line-height: 1.3;
     text-align: center;
-    background: #C81818;
     position: relative;
 }
 
 #hero + section{
     margin-top: 100vh;
+    background: #C81818;
 }
 
 #hero{
