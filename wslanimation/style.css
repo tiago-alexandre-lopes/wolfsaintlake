@@ -17,7 +17,7 @@
 }
 
 body{
-  background: #18181A;
+  background: #131314;
   padding: 0;
   margin: 0;
   animation: bg 3s cubic-bezier(0.83, 0, 0.17, 1) forwards;
@@ -93,9 +93,11 @@ span{
 @keyframes text {
     0% {
         opacity: 0;
+        transform: scale(1.5) translateY(20%);
     }
     100% {
         opacity: 1;
+        transform: scale(1) translateY(0);
     }
 }
 
