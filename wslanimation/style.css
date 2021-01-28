@@ -42,13 +42,13 @@ section{
     justify-content: center;
     flex-direction: column;
     position: absolute;
-    animation: intro 5s cubic-bezier(0.64, 0, 0.78, 0) forwards;
+    animation: intro 4s cubic-bezier(0.64, 0, 0.78, 0) forwards;
 }
 
 
 @keyframes intro {
     0% {
-        transform: scale(6) translateY(22.5%);
+        transform: scale(8) translateY(36%);
     }
     100% {
         transform: scale(1) translateY(0);
