@@ -20,7 +20,8 @@ body{
   background: #18181A;
   padding: 0;
   margin: 0;
-  animation: bg 5s cubic-bezier(0.83, 0, 0.17, 1) forwards;
+  animation: bg 3s cubic-bezier(0.83, 0, 0.17, 1) forwards;
+  animation-delay: 4s;
 }
 
 @keyframes bg {
@@ -92,12 +93,9 @@ span{
 @keyframes text {
     0% {
         opacity: 0;
-        letter-spacing: 6vh;
-        padding-bottom: 5vh;
     }
     100% {
-        letter-spacing: 0;
-        padding-bottom: 0;
+        opacity: 1;
     }
 }
 
