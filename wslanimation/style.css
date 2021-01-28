@@ -21,7 +21,7 @@ body{
   padding: 0;
   margin: 0;
   animation: bg 3s cubic-bezier(0.83, 0, 0.17, 1) forwards;
-  animation-delay: 4s;
+  animation-delay: 1s;
 }
 
 @keyframes bg {
@@ -88,6 +88,7 @@ span{
   color: #C81818;
   animation: text 3s cubic-bezier(0.83, 0, 0.17, 1) forwards;
   animation-delay: 2s;
+  opacity: 0;
 }
 
 @keyframes text {
