@@ -33,6 +33,23 @@ body{
     }
 }
 
+a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-size: 3vh;
+    border: 1px solid;
+    padding: 3vh 4vh;
+    margin: 3vh;
+    display: inline-block;
+    transition: all 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+a:hover{
+    background: black;
+    color: #C81818;
+}
+
 
 section{
     padding: 10vw;
