@@ -181,7 +181,18 @@ body {
     font-size: 1.6rem;
     line-height: 160%;
     font-family: m_regular;
+    animation: bg 3s cubic-bezier(0.76, 0, 0.24, 1) forwards;
 }
+
+@keyframes bg {
+    0% {
+        background-color: #0d0d0d;;
+    }
+    100% {
+        background-color: #000;
+    }
+}
+
 body,
 html {
     margin: 0;
