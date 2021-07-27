@@ -418,8 +418,8 @@ svg{
 
   #intro-animation #anim{
     animation: hide-text 2s cubic-bezier(0.76, 0, 0.24, 1) forwards;
+    animation-delay: 5s;
   }
-
 
   @keyframes hide-text {
     0% {
