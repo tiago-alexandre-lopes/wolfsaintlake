@@ -188,6 +188,8 @@ html {
     padding: 0;
     overflow: hidden;
     height: 100%;
+    height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
 }
 
 
@@ -430,7 +432,7 @@ svg{
     margin: auto;
     text-align: center;
     font-size: 7vh;
-    font-family: 'Saint Monica';
+    font-family: 'SM';
     color: #C81818;
     animation: text 3s cubic-bezier(0.76, 0, 0.24, 1) forwards;
     animation-delay: 2s;
