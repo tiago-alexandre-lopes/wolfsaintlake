@@ -283,11 +283,11 @@ main .content{
 @keyframes reveal_content {
     0% {
       opacity: 0;
-      transform: translateY(25%);
+      transform: translateY(20vh);
     }
     100% {
       opacity: 1;
-      transform: translateY(0%);
+      transform: translateY(0);
     }
   }
 
@@ -416,6 +416,11 @@ svg{
     animation-delay: 5s;
   }
 
+  #intro-animation #anim{
+    animation: hide-text 2s cubic-bezier(0.76, 0, 0.24, 1) forwards;
+  }
+
+
   @keyframes hide-text {
     0% {
         opacity: 1;
@@ -423,7 +428,7 @@ svg{
     }
     100% {
         opacity: 0;
-        transform: translateY(-50%);
+        transform: translateY(-20vh);
     }
 }
   
