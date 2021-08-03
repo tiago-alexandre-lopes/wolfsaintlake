@@ -335,6 +335,7 @@ main .content figure{
 }
 
 
+
 @media (max-width: 1024px){
 
     main{
@@ -342,8 +343,8 @@ main .content figure{
     }
 
     main .content h1{
-        font-size: 20vw;
-        line-height: 20vw;
+        font-size: 11vw;
+        line-height: 11vw;
         bottom: 0;
         left: 0;
         padding-top: 4vw;
@@ -362,9 +363,26 @@ main .content figure{
     margin: 1.6rem 0;
     }
     main .content figure{
-        width: 24vw;
+        width: 11vw;
         max-width: 14rem;
         position: fixed;
+        top: 25vw;
+        left: 30vw;
+    }
+}
+
+
+@media (max-width: 500px){
+
+
+    main .content h1{
+        font-size: 20vw;
+        line-height: 20vw;
+    }
+
+
+    main .content figure{
+        width: 24vw;
         top: 40vw;
         left: 55vw;
     }
