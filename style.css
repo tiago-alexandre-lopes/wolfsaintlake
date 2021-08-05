@@ -377,6 +377,9 @@ main .content figure{
 
 @media (max-width: 500px){
 
+    body,html{
+        overflow: auto;
+    }
 
     main .content h1{
         font-size: 20vw;
