@@ -818,7 +818,7 @@ svg{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%) translateY(-55%);
+    transform: translateX(-50%) translateY(-60%);
     display: block;
     width: 100%;
     font-size: 8vw;
@@ -971,6 +971,7 @@ svg{
 
     #about h2{
         font-size: 40px;
+        letter-spacing: .5em;
     }
 
     #about div .photo{
@@ -984,7 +985,7 @@ svg{
         width: 70%;
         max-width: 400px;
         height: 100vh;
-        max-height: 550px;
+        max-height: 45vh;
         top: 0;
         
     }
@@ -997,7 +998,7 @@ svg{
         line-height: .85;
         font-size: 32vw;
         top: 50%;
-        transform: translateX(-50%) translateY(-60%);
+        transform: translateX(-50%) translateY(-50%);
         color: #000;
     }
 
@@ -1091,3 +1092,44 @@ svg{
     opacity: 1;
     transform: translateY(0%);
 }
+
+
+
+#about .scroll{
+    background: transparent;
+    width: 40px;
+    height: 120px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(50%);
+    z-index: 99;
+    display: block;
+    margin: 0;
+}
+
+#about .scroll span{
+    display: block;
+    width: 2px;
+    height: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(180deg, rgba(255,255,255,0.00) 0%, rgba(255,255,255,0.00) 25%, #fff 50%, rgba(255,255,255,0.00) 75%, rgba(255,255,255,0.00) 100%);
+    background-size: 300% 300%;
+    -webkit-animation: AnimationName 2s ease infinite;
+    -moz-animation: AnimationName 2s ease infinite;
+    animation: AnimationName 2s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:50% 120%}
+    100%{background-position:50% -20%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:50% 120%}
+    100%{background-position:50% -20%}
+}
+@keyframes AnimationName {
+    0%{background-position:50% 120%}
+    100%{background-position:50% -20%}
