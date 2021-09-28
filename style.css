@@ -280,7 +280,7 @@ p {
     bottom: -1.8rem;
 }
 
-a {
+li a {
     font-family: ATAR;
     color: #eee;
     text-decoration: none;
@@ -362,8 +362,8 @@ section{
 a:hover{
     color: #C81818
 }
-
-a::before{
+/*
+li a::before{
     content: "";
     width: 0;
     height: 0.1rem;
@@ -379,7 +379,7 @@ a::before{
 a:hover::before{
     width: 100%;
 }
-
+*/
 main .content figure{
     padding: 0;
     margin: 0;
@@ -863,6 +863,54 @@ svg{
     font-family: ATAR;
 }
 
+a{
+    color: #c81917;
+    text-decoration: none;
+    position: relative;
+}
+
+.about_text a::after{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #c81917;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .8s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+.about_text a:hover::after{
+    width: 0%;
+    transition: all .3s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+a svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-58%) scaleX(1.2) scaleY(1.5);
+    width: 100%;
+    height: 100%;
+}
+
+.about_text a svg{
+    transform: translateX(-50%) translateY(-58%) scale(1.2);
+}
+
+a svg path{
+    stroke: #c81917;
+    stroke-width: 1px;
+    stroke-dasharray: 635px;
+    stroke-dashoffset: 635px;
+    transition: all 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+a:hover svg path{
+    stroke-dashoffset: 0;
+}
+
 .waving_animation{
     animation: waving 2.4s infinite cubic-bezier(0.68, -0.6, 0.32, 1.6);
     transform-origin: 70% 80%;
@@ -1013,7 +1061,7 @@ svg{
         transform: translateX(-180%) translateY(-40%);
         width: 18vw;
         max-width: 140px;
-        min-width: 120px;
+        min-width: 90px;
     }
 }
 
@@ -1133,3 +1181,15 @@ svg{
 @keyframes AnimationName {
     0%{background-position:50% 120%}
     100%{background-position:50% -20%}
+}
+
+
+#about.no_anim div .photo::after,
+#about.no_anim h1,
+#about.no_anim div .photo img,
+#about.no_anim .photo + .logo,
+#about.no_anim div:nth-of-type(2){
+    transition: 0s !important;
+}
+
+

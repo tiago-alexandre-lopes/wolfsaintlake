@@ -75,19 +75,16 @@
             <h1>Wolf<br>Saint<br>Lake</h1>
             <ul>
                 <li>
-                    <a href="#about" class="open_about_me_modal">About Me</a>
+                    <a href="#about" class="open_about_me_modal">About Me<svg viewBox="0 0 195 41" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M111 39.595c55.393-.678 83.09-5.382 83.09-14.112 0-13.095-61.142-13.982-99.53-13.538-38.39.443-93.552 7.447-93.552 18.332 0 10.884 82.71 9.318 109.992 9.318 27.283 0 83.09-3.887 83.09-14.112S139.124-1.449 50.963 1.14" stroke="#c81917" fill="none" fill-rule="evenodd"/></svg></a>
                 </li>
                 <li>
-                    <a href="mailto:houseof@wolfsaintlake.com">Contact</a>
+                    <a href="https://www.instagram.com/tiago.alexandre.lopes/" target="_blank">Instagram<svg viewBox="0 0 195 41" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M111 39.595c55.393-.678 83.09-5.382 83.09-14.112 0-13.095-61.142-13.982-99.53-13.538-38.39.443-93.552 7.447-93.552 18.332 0 10.884 82.71 9.318 109.992 9.318 27.283 0 83.09-3.887 83.09-14.112S139.124-1.449 50.963 1.14" stroke="#c81917" fill="none" fill-rule="evenodd"/></svg></a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/tiago.alexandre.lopes/" target="_blank">Instagram</a>
+                    <a href="https://unsplash.com/@tiagolopes" target="_blank">Unsplash<svg viewBox="0 0 195 41" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M111 39.595c55.393-.678 83.09-5.382 83.09-14.112 0-13.095-61.142-13.982-99.53-13.538-38.39.443-93.552 7.447-93.552 18.332 0 10.884 82.71 9.318 109.992 9.318 27.283 0 83.09-3.887 83.09-14.112S139.124-1.449 50.963 1.14" stroke="#c81917" fill="none" fill-rule="evenodd"/></svg></a>
                 </li>
                 <li>
-                    <a href="https://unsplash.com/@tiagolopes" target="_blank">Unsplash</a>
-                </li>
-                <li>
-                    <a href="https://dribbble.com/tiagoalexandrelopes" target="_blank">Dribbble</a>
+                    <a href="https://dribbble.com/tiagoalexandrelopes" target="_blank">Dribbble<svg viewBox="0 0 195 41" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M111 39.595c55.393-.678 83.09-5.382 83.09-14.112 0-13.095-61.142-13.982-99.53-13.538-38.39.443-93.552 7.447-93.552 18.332 0 10.884 82.71 9.318 109.992 9.318 27.283 0 83.09-3.887 83.09-14.112S139.124-1.449 50.963 1.14" stroke="#c81917" fill="none" fill-rule="evenodd"/></svg></a>
                 </li>
                 
             </ul>
@@ -156,6 +153,10 @@
                     Thank you for stopping by ✌️
                 </p>
 
+                <p>
+                    Feel free to <a href="mailto:houseof@wolfsaintlake.com"><span>contact me</span><svg viewBox="0 0 195 41" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M111 39.595c55.393-.678 83.09-5.382 83.09-14.112 0-13.095-61.142-13.982-99.53-13.538-38.39.443-93.552 7.447-93.552 18.332 0 10.884 82.71 9.318 109.992 9.318 27.283 0 83.09-3.887 83.09-14.112S139.124-1.449 50.963 1.14" stroke="#c81917" fill="none" fill-rule="evenodd"/></svg></a> 📩. We can talk about 🐱 👽 🥐 🌲.
+                </p>
+
                 
 
             </div>
@@ -188,10 +189,20 @@
     <script>
         $(".open_about_me_modal").click(function(){
             $("#about").addClass("open");
+            $("#about").removeClass("no_anim");
         });
         $(".close_modal").click(function(){
             $("#about").removeClass("open");
+            $("#about").removeClass("no_anim");
         });
+    </script>
+
+    <script>   
+    
+    $(window).on('resize',function(){
+        $("#about").addClass("no_anim");
+    });
+
     </script>
 
     
