@@ -878,7 +878,7 @@ a{
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    transition: all .8s cubic-bezier(0.65, 0, 0.35, 1);
+    transition: all .9s cubic-bezier(0.65, 0, 0.35, 1);
 }
 
 .about_text a:hover::after{
