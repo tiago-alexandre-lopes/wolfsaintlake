@@ -164,8 +164,8 @@ template {
 
 @font-face {
     font-family: 'SM';
-    src: url('https://tiagoalexandrelopes.com/fonts/SaintMonicaRegular.woff2') format('woff2'),
-        url('https://tiagoalexandrelopes.com/fonts/SaintMonicaRegular.woff') format('woff');
+    src: url('fonts/SaintMonicaRegular.woff2') format('woff2'),
+        url('fonts/SaintMonicaRegular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
