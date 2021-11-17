@@ -75,3 +75,20 @@ $("#navigation a").click(function(){
     $(".burger-icon").removeClass("active");
     $("body").removeClass("navigation-open");
 });
+
+
+
+
+/* Lottie */
+
+var animation = bodymovin.loadAnimation({
+    container: document.getElementByID
+})
+
+var animation = bodymovin.loadAnimation({
+    container: document.getElementById('anim'), // required
+    path: 'data.json', // required
+    renderer: 'svg', // required
+    loop: true, // optional
+    autoplay: true, // optional
+  });
