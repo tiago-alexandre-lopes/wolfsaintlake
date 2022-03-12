@@ -1,4 +1,11 @@
+@font-face {
+    font-family: 'pp_eikoregular';
+    src: url('../fonts/ppeiko-variable-webfont.woff2') format('woff2'),
+         url('../fonts/ppeiko-variable-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
 
 html {
     background-color: rgba(242,5,5,1);
@@ -10,8 +17,6 @@ html {
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     box-sizing: border-box;
     scroll-behavior: smooth;
-    padding: 32px;
-    box-sizing: border-box;
 }
 
 
@@ -19,21 +24,93 @@ body {
     color: #fff;
     font-weight: 300;
     font-size: 1.6rem;
-    line-height: 160%;
-    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    font-family: 'pp_eikoregular';
     overflow-x: hidden;
     background-color: #111;
 
 }
 
 h1{
-    font-weight: 700;
+    font-weight: initial;
+    font-family: 'pp_eikoregular';
+
+    background-image: linear-gradient(45deg, rgba(242,5,5,1), rgba(242,5,5,.5));
+
+    background-size: 100%;
+    background-repeat: repeat;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
 }
 
 a{
     text-decoration: none;
     color: inherit;
 }
+
+figure{
+    width: 100%;
+    height: 200vh;
+}
+
+figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.f-bottom,
+.f-top,
+.f-left,
+.f-right{
+    position: fixed;
+}
+
+.f-bottom{
+    bottom: 0;
+}
+
+.f-top{
+    top: 0;
+}
+
+.f-left{
+    left: 0;
+}
+
+.f-right{
+    right: 0
+}
+
+
+
+#hero{
+    position: relative;
+    z-index: 1;
+}
+
+#about{
+    background: #fff;
+    position: relative;
+    z-index: 2;
+    padding: 8vw 0;
+}
+
+#about p{
+    font-size: 5.4rem;
+    color: #000;
+    text-align: center;
+}
+
+#games{
+    position: relative;
+    z-index: 3;
+}
+
+
 
 
 
@@ -81,127 +158,9 @@ ul{
 }
 
 
-section p{
-    font-size: 2rem;
-    margin: 4rem 0;
-}
-
-section .note{
-    font-size: 1.6rem;
-}
-
-section h1{
-    text-transform: uppercase;
-    font-size: 3.2rem;
-    margin: 4rem 0;
-}
-
-figure{
-    margin: 0;
-    padding: 0;
-    height: 90vh;
-    display: block;
-}
-
-figure img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 
 
-h1{
-    background-image: linear-gradient(45deg, rgba(242,5,5,1), rgba(242,5,5,.5));
-
-    background-size: 100%;
-    background-repeat: repeat;
-
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-background-clip: text;
-    -moz-text-fill-color: transparent;
-}
-
-
-
-
-.hero{
-    padding-top: 12rem;
-    
-}
-
-.hero h1{
-    font-size: calc((6.5 - 1) * 1.2vw + 1rem);
-    line-height: 1.092;
-}
-
-
-#about{
-    
-}
-
-#games{
-    
-    padding: 12rem 0;
-}
-
-#games h1{
-    font-size: calc((6.5 - 1) * .6vw + 1rem);
-    line-height: 1;
-}
-
-
-@media (min-width: 1023px){
-    #games .row{
-        display: flex;
-          align-items: center;
-        }
-}
-
-
-
-
-#games .row > div:nth-child(2){
-    padding-left: 5%;
-}
-
-
-
-.svg_bubble {
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    overflow: visible;
-}
-
-.third_bubble path {
-    transition: d:.6s cubic-bezier(.34,1.56,.64,1);
-    -webkit-transition: d .6s cubic-bezier(.34,1.56,.64,1);
-}
-
-figure:hover .blob,
-#games:hover .blob {
-    d: path("M30.934 372.684c-9.648-74.165 24.047-170.255 71.617-228.442 47.57-58.187 88.828-133.285 183.386-142.61 94.559-9.323 176.117 63.795 226.653 129.52 50.48 65.521 79.48 109.743 71.64 225.567-7.84 115.824-77.558 194.761-191.539 211.761-113.98 17-173.991 22.325-254.898-24.386-80.907-46.712-97.082-97.171-106.86-171.41z");
-}
-
-
-
-
-@media (min-width: 768px){
-
-    #header nav ul li:not(.logo){
-        display: inline-block;
-    }
-
-    .svg_bubble{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateY(-50%) translateX(-50%);
-    }
-
-}
 
 footer{
     padding-top: 24rem;
