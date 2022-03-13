@@ -61,6 +61,11 @@ table {
 
 }
 
+html,
+body{
+    overflow-x: hidden;
+}
+
 html {
     background-color: rgba(242,5,5,1);
     background-color: #000;
@@ -265,10 +270,16 @@ section h1{
 }
 
 #about .content{
-    width: 80%;
-    margin: auto;
     text-align: center;
 }
+
+@media (min-width: 391px){
+    #about .content{
+        width: 80%;
+        margin: auto;
+    }
+}
+
 
 #about .content p{
     font-size: 4vw;
