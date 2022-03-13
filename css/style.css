@@ -178,6 +178,8 @@ section video{
 #myVideo {
   height: 100%;
   width: auto;
+  left: 50%;
+transform: translateX(-50%);
 }
 
 section figure img{
