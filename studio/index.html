@@ -69,7 +69,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-10">
-                    <h1>We are an independent studio, currently working on Flubby Ghost</h1>
+                    <h1 data-0="opacity:1;top:3%;transform:rotate(0deg);transform-origin:0 0;" data-500="opacity:0;top:-10%;transform:rotate(-90deg);" class="skrollable skrollable-between">Flubby Ghost</h1>
                 </div>
             </div>
         </div>
@@ -80,9 +80,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-7 col-md-push-5">
-                    <p>We are a very small team (just two people for now!) passionate about design and problem-solving.</p>
-                    <p>We decided to make a game called Flubby Ghost for iOS, Android, PlayStation and Xbox.</p>
-                    <p>We are always open to your feedback, so follow our journey on Twitter and take part in the process.</p>
+                    
                 </div>
             </div>
         </div>
@@ -156,5 +154,23 @@
 
 
 
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script type="text/javascript" src="skrollr.min.js"></script>
+
+<script>
+
+	var s = skrollr.init({
+		edgeStrategy: 'set',
+		easing: {
+			WTF: Math.random,
+			inverted: function(p) {
+				return 1-p;
+			}
+		}
+	});
+
+</script>
 </body>
 </html>
