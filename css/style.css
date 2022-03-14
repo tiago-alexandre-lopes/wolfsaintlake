@@ -283,9 +283,14 @@ section h1{
 }
 
 #about .content{
-    width: 80%;
     margin: auto;
     text-align: center;
+}
+
+@media (min-width: 1024px){
+    #about .content{
+        width: 80%;
+    }
 }
 
 #about .content p{
