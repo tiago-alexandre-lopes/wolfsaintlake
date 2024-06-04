@@ -124,7 +124,8 @@ p{
 
 
 section{
-    height: 200vh;
+    height: 100vh;
+    width: 100%;
     position: relative;
 }
 
@@ -176,15 +177,28 @@ section video{
 }
 
 #myVideo {
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 100%;
     left: 50%;
     transform: translateX(-50%) scale(2);
+}
+
+@media (max-width: 1023px){
+    #myVideo {
+        height: 100%;
+        width: auto;
+    }  
 }
 
 @media (min-width: 1024px){
     #myVideo{
         transform: translateX(-50%);
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 2050px) {
+    #myVideo {
+        transform: translateX(-50%) scale(2.1);
     }
 }
 
@@ -230,40 +244,34 @@ section h1{
 
 
 
-#hero .intro .button{
-    position: absolute;
-    bottom: 0;
-    width: 40px;
-    height: 120px;
-    text-decoration: none;
-    color: inherit;
-    font-size: 4vw;
-    display: none;
-}
+
 
 @media (min-width: 1024px){
-    #hero p{
-        position: sticky;
-        bottom: 4vw;
-        align-self: flex-end;
-        max-width: 40%;
-        padding-top: 2vw;
-        text-align: right;
-    }
+
     #hero .intro{
-        position: sticky;
+        position: fixed;
         top: 4vw;
         width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: stretch;
-        justify-content: space-between;
-    
-        align-items: center;
     }
 
     #hero .intro .button{
         display: block;
+    }
+}
+
+#hero .intro svg{
+    width: 33.33vw;
+    height: auto;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+}
+
+@media (max-width: 1023px){
+    #hero .intro svg{
+        width: 66.66vw;
     }
 }
 
@@ -429,6 +437,8 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 2;
 }
 
 footer .content{
@@ -491,7 +501,7 @@ footer a:hover::after{
 
 @media (max-width: 1023px){
     section{
-        height: auto !important;
+
     }
 
     #about .content p,
