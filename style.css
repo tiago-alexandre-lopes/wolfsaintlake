@@ -2735,6 +2735,11 @@ overflow: hidden;
   display: none;
 }
 
+.mobile section video {
+  width: 75vw;
+  height: auto;
+  margin-left: 5vw;
+}
 
 
 
