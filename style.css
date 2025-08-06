@@ -886,9 +886,6 @@ svg{
   width: auto;
   height: 100%;
   fill: transparent;
-  stroke: black;
-  stroke-width: 1;
-  overflow: visible;
 }
 
 svg .fill,
