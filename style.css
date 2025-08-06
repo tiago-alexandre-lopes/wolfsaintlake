@@ -1027,7 +1027,7 @@ svg .fill {
   background: #191919;
   -webkit-perspective: 100vh;
           perspective: 100vh;
-          
+
 }
 
 
@@ -1040,6 +1040,7 @@ svg .fill {
 .desktop #main-navigation .main-navigation-title{
   position: absolute;
   bottom: 0;
+  left: -1em;
 }
 
 @keyframes show_main_navigation {
@@ -2740,6 +2741,3 @@ overflow: hidden;
   height: auto;
   margin-left: 5vw;
 }
-
-
-
