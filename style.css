@@ -30,41 +30,6 @@ body{
 
 
 @font-face {
-  font-family: 'm_medium';
-  src: url('fonts/m_-medium-webfont.woff2') format('woff2'), url('fonts/m_-medium-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'm_regular';
-  src: url('fonts/m_-regular-webfont.woff2') format('woff2'), url('fonts/m_-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'm_light';
-  src: url('fonts/m_-light-webfont.woff2') format('woff2'), url('fonts/m_-light-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'm_bold';
-  src: url('fonts/m_-bold-webfont.woff2') format('woff2'), url('fonts/m_-bold-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'm_black';
-  src: url('fonts/m_-black-webfont.woff2') format('woff2'), url('fonts/m_-black-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'TwCenMT-Bold';
   src: url('fonts/TwCenMT-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/TwCenMT-Bold.woff') format('woff'), url('fonts/TwCenMT-Bold.ttf') format('truetype'), url('fonts/TwCenMT-Bold.svg#TwCenMT-Bold') format('svg');
   font-weight: normal;
@@ -113,7 +78,8 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 180%;
-  font-family: 'm_regular';
+  font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
   -webkit-transition: transform 0.6s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
   -o-transition: transform 0.6s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
   transition: transform 0.6s cubic-bezier(0.645, 0.045, 0.355, 1), opacity 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
@@ -150,12 +116,16 @@ h1,
 
 h1.jumbo-title {
   font-size: 4rem;
-  font-family: 'm_medium';
+  font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
 }
 
 h1.large-title {
   font-size: 5rem;
-  font-family: 'm_medium';
+  font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
 }
 
 h2,
@@ -166,7 +136,9 @@ h2,
 }
 
 h2.large-title {
-  font-family: 'm_medium';
+    font-family: "Source Serif 4", serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
   font-size: 2rem;
 }
 
@@ -176,7 +148,9 @@ h3,
 }
 
 h3.large-title {
-  font-family: 'm_medium';
+    font-family: "Source Serif 4", serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
   font-size: 2rem;
   line-height: 1.4;
 }
@@ -194,7 +168,8 @@ button {
 
 .excerpt p {
   font-size: 2.25vh;
-  font-family: 'm_regular';
+  font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
 }
 
 p {
@@ -203,7 +178,8 @@ p {
 }
 
 q {
-  font-family: 'm_regular';
+    font-family: "Source Serif 4", serif;
+      font-optical-sizing: auto;
   font-size: 1.6rem;
   color: #444;
   margin: 1.5rem 0;
@@ -324,7 +300,9 @@ ul strong {
 
 strong {
   font-weight: initial;
-  font-family: 'm_medium';
+  font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
   font-weight: 800;
 }
 
@@ -670,7 +648,9 @@ svg{
 }
 
 #intro-animation .tagline{
-  font-family: 'm_medium';
+    font-family: "Source Serif 4", serif;
+      font-optical-sizing: auto;
+      font-weight: 600;
   font-size: 1.5vh;
   text-transform: uppercase;
   margin-top: 2vh
@@ -1079,7 +1059,9 @@ svg .fill {
 
 #main-navigation h1 {
   color: white;
-  font-family: 'm_medium';
+  font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
 }
 
 #main-navigation a {
@@ -2018,7 +2000,8 @@ h1.jumbo-title.sm{
 }
 
 .desktop .devided-text-blocks strong {
-  font-family: 'm_medium';
+    font-family: "Source Serif 4", serif;
+      font-optical-sizing: auto;
   font-weight: 800;
   text-transform: uppercase;
 }
